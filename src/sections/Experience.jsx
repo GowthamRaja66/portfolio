@@ -31,7 +31,7 @@ const Experience = () => {
           // The card is the trigger element
           trigger: card,
           // Trigger the animation when the card is 80% down the screen
-          start: "top 80%",
+          start: "top sm:80%",
         },
       });
     });
@@ -113,7 +113,7 @@ const Experience = () => {
                 <div className="xl:w-4/6">
                   <div className="flex items-start">
                     <div className="timeline-wrapper">
-                      <div className="timeline" />
+                      <div className="sm:timeline" />
                       <div className="gradient-line w-1 h-full" />
                     </div>
                     <div className="flex xl:gap-20 md:gap-10 gap-5 relative z-20">
