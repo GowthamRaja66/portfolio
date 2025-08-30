@@ -49,8 +49,8 @@ const Experience = () => {
       // and end it when the timeline is at 70% down the screen
       scrollTrigger: {
         trigger: ".timeline",
-        start: "top center",
-        end: "70% center",
+        start: "top 80%",
+        end: "50% center",
         // Update the animation as the user scrolls
         onUpdate: (self) => {
           // Scale the timeline height as the user scrolls
@@ -105,7 +105,7 @@ const Experience = () => {
               <div key={card.title} className="exp-card-wrapper">
                 <div className="xl:w-2/6">
                   <GlowCard card={card}>
-                    <div>
+                    <div className="max-w-1/3">
                       <img src={card.imgPath} alt="exp-img" />
                     </div>
                   </GlowCard>
@@ -116,7 +116,7 @@ const Experience = () => {
                       <div className="timeline" />
                       <div className="gradient-line w-1 h-full" />
                     </div>
-                    <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
+                    <div className="flex xl:gap-20 md:gap-10 gap-5 relative z-20">
                       <div className="timeline-logo">
                         <img src={card.logoPath} alt="logo" />
                       </div>

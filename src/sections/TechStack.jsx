@@ -54,7 +54,7 @@ const TechStack = () => {
             >
               {/* The tech-card-animated-bg div is used to create a background animation when the 
                   component is hovered. */}
-              <div className="tech-card-animated-bg" />
+              {/* <div className="tech-card-animated-bg" /> */}
               <div className="tech-card-content">
                 {/* The tech-icon-wrapper div contains the TechIconCardExperience component, 
                     which renders the 3D model of the tech stack icon. */}
@@ -70,24 +70,6 @@ const TechStack = () => {
               </div>
             </div>
           ))}
-
-          {/* This is for the img part */}
-          {/* {techStackImgs.map((techStackIcon, index) => (
-            <div
-              key={index}
-              className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
-            >
-              <div className="tech-card-animated-bg" />
-              <div className="tech-card-content">
-                <div className="tech-icon-wrapper">
-                  <img src={techStackIcon.imgPath} alt="" />
-                </div>
-                <div className="padding-x w-full">
-                  <p>{techStackIcon.name}</p>
-                </div>
-              </div>
-            </div>
-          ))} */}
         </div>
       </div>
     </div>
